@@ -118,6 +118,7 @@ a:active {
   z-index: 10;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .author__share .svg-fill {
