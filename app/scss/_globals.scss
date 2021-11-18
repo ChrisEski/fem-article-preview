@@ -1,0 +1,23 @@
+// Resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // border: 2px solid red;
+  font-family: $ff--main;
+  background-color: $clr--300;
+  font-size: $fs--main;
+  padding: 75px 25px;
+  height: 100vh;
+}
+
+a,
+a:visited,
+a:active {
+  font-family: inherit;
+}
