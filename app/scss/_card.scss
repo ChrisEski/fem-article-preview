@@ -5,10 +5,13 @@
   border-radius: 15px;
   box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.082);
   position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 
   @media (min-width: 1080px) {
     max-width: 730px;
     display: flex;
+    overflow: visible;
   }
 
   &__banner {

@@ -1,11 +1,10 @@
 .msg {
   // opacity: 0.5;
+  // border: 2px solid red;
   opacity: 0;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 76px;
-  padding-left: 30px;
   transition: all 0.3s ease-in-out;
 
   @media (min-width: 1080px) {
@@ -16,7 +15,10 @@
   }
 
   &__box {
+    height: 76px;
     background-color: $clr--700;
+    display: flex;
+    align-items: center;
 
     @media (min-width: 1080px) {
       display: flex;
@@ -33,15 +35,18 @@
     color: $clr--400;
     font-weight: $fw--bold-700;
     letter-spacing: 5px;
+    margin-left: 30px;
+    margin-right: 22px;
 
     @media (min-width: 1080px) {
+      margin-left: 0;
       margin-right: 22px;
     }
   }
 
   &__social {
+    margin-right: 16px;
     @media (min-width: 1080px) {
-      margin-right: 16px;
     }
 
     &--last {
