@@ -1,16 +1,14 @@
 .card {
-  // border: 1px solid red;
-  // overflow: hidden;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.082);
-  position: relative;
-  overflow: hidden;
   border-radius: 15px;
 
   @media (min-width: 1080px) {
-    max-width: 730px;
     display: flex;
+    max-width: 730px;
     overflow: visible;
   }
 
@@ -40,27 +38,26 @@
   }
 
   &__title {
+    margin-bottom: 20px;
     font-size: 18px;
     color: $clr--700;
-    margin-bottom: 20px;
 
     @media (min-width: 1080px) {
-      font-size: 21px;
       margin-bottom: 16px;
+      font-size: 21px;
     }
   }
 
   &__description {
+    margin-bottom: 30px;
     padding-right: 23px;
     font-size: 14px;
     line-height: 1.5;
     color: $clr--600;
-    margin-bottom: 30px;
   }
 }
 
 .author {
-  // border: 2px solid brown;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,6 +68,7 @@
   }
 
   &__img {
+    margin-right: 15px;
     background-image: url('./../../images/avatar-michelle.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -78,10 +76,6 @@
     aspect-ratio: 1;
     width: 40px;
     border-radius: 50%;
-    margin-right: 15px;
-  }
-
-  &__details {
   }
 
   &__name {
@@ -96,16 +90,16 @@
   }
 
   &__share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: $clr--300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
     z-index: 10;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
 
     .svg-fill {
       transition: all 0.3s ease-in-out;

@@ -8,11 +8,11 @@
 }
 
 body {
-  font-family: "Manrope", sans-serif;
-  background-color: #ecf2f8;
-  font-size: 13px;
-  padding: 75px 25px;
   height: 100vh;
+  padding: 75px 25px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
 }
 
 @media (min-width: 1080px) {
@@ -40,21 +40,21 @@ a:active {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 20px;
   border-radius: 15px;
   -webkit-box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.082);
           box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.082);
-  position: relative;
-  overflow: hidden;
   border-radius: 15px;
 }
 
 @media (min-width: 1080px) {
   .card {
-    max-width: 730px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 730px;
     overflow: visible;
   }
 }
@@ -89,24 +89,24 @@ a:active {
 }
 
 .card__title {
+  margin-bottom: 20px;
   font-size: 18px;
   color: #48556a;
-  margin-bottom: 20px;
 }
 
 @media (min-width: 1080px) {
   .card__title {
-    font-size: 21px;
     margin-bottom: 16px;
+    font-size: 21px;
   }
 }
 
 .card__description {
+  margin-bottom: 30px;
   padding-right: 23px;
   font-size: 14px;
   line-height: 1.5;
   color: #6d7f97;
-  margin-bottom: 30px;
 }
 
 .author {
@@ -131,6 +131,7 @@ a:active {
 }
 
 .author__img {
+  margin-right: 15px;
   background-image: url("./../../images/avatar-michelle.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -138,7 +139,6 @@ a:active {
   aspect-ratio: 1;
   width: 40px;
   border-radius: 50%;
-  margin-right: 15px;
 }
 
 .author__name {
@@ -153,10 +153,6 @@ a:active {
 }
 
 .author__share {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #ecf2f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,10 +162,14 @@ a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  cursor: pointer;
   z-index: 10;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 .author__share .svg-fill {
@@ -208,22 +208,22 @@ a:active {
 
 @media (min-width: 1080px) {
   .msg {
-    padding: 0;
     width: 248px;
+    padding: 0;
     -webkit-transform: translate(222%, -115%);
             transform: translate(222%, -115%);
   }
 }
 
 .msg__box {
-  height: 76px;
-  background-color: #48556a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 76px;
+  background-color: #48556a;
 }
 
 @media (min-width: 1080px) {
@@ -231,10 +231,10 @@ a:active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 65px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 65px;
     padding: 18px 37px;
     border-radius: 10px;
     -webkit-box-shadow: 2px 12px 10px rgba(0, 0, 0, 0.082);
@@ -243,12 +243,12 @@ a:active {
 }
 
 .msg__text {
+  margin-left: 30px;
+  margin-right: 22px;
   text-transform: uppercase;
   color: #9eafc2;
   font-weight: 700;
   letter-spacing: 5px;
-  margin-left: 30px;
-  margin-right: 22px;
 }
 
 @media (min-width: 1080px) {

@@ -8,12 +8,11 @@
 }
 
 body {
-  // border: 2px solid red;
-  font-family: $ff--main;
-  background-color: $clr--300;
-  font-size: $fs--main;
-  padding: 75px 25px;
   height: 100vh;
+  padding: 75px 25px;
+  font-family: $ff--main;
+  font-size: $fs--main;
+  background-color: $clr--300;
 
   @media (min-width: 1080px) {
     display: flex;
